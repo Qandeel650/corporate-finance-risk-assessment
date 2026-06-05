@@ -1,0 +1,72 @@
+# Corporate Finance & Risk Assessment
+
+## Overview
+This project analyzes multi-year financial data across six industries (Finance, Manufacturing, Healthcare, Technology, Energy, Retail) to evaluate performance trends and risk indicators. Built with a MySQL star schema (dim_company, dim_date, fact_financial), it calculates revenue YoY growth, profit margins, debt-equity ratios, financial leverage, and working capital ratios. Two executive-level Power BI dashboards provide Finance and Risk overviews for strategic decision-making.
+
+## Objective
+- Analyze industry financial performance and growth trends
+- Evaluate risk exposure through leverage and liquidity metrics
+- Identify top-performing industries and risk outliers
+
+## Tools Used
+- **Excel** — Data cleaning and preprocessing
+- **MySQL** — Star schema modeling and SQL analytics
+- **Power BI** — Interactive dashboards and visualizations
+- **DAX** — Calculated measures and KPIs
+
+## Data Model
+Star schema with one-to-many relationships:
+
+- **dim_company** — Company ID and industry sector
+- **dim_date** — Date hierarchy (year, quarter, month, month_name)
+- **fact_financial** — Financial metrics: cash_flow, current_assets, current_liabilities, debt_equity_ratio, net_income, operating_income, return_on_assets
+
+## Key Metrics
+| Metric | Description |
+|--------|-------------|
+| Total Revenue | Sum of net_income by industry |
+| Total Profit | Sum of operating_income |
+| Profit Margin % | Profit / Revenue |
+| Revenue YoY % | Year-over-year revenue growth |
+| Debt-Equity Ratio | Leverage indicator |
+| Financial Leverage | Liabilities / Assets |
+| Working Capital Ratio | Liquidity health indicator |
+
+## Key Insights
+- Revenue shows steady growth with peak in 2024
+- Finance sector leads in total revenue
+- Manufacturing shows highest profit margin
+- Healthcare shows higher leverage ratio (elevated risk)
+- Technology maintains strong working capital position
+- Retail has lower asset base compared to peers
+- Energy is in moderate risk situation
+
+## Dashboards
+
+### Finance Executive Overview
+- Revenue vs Profitability scatter plot by industry
+- Revenue trend over time (2016–2024)
+- Profit trend over time
+- Revenue by industry (bar chart)
+- Profit margin by industry (bar chart)
+
+### Risk Overview
+- Assets vs Liabilities by industry
+- Financial Leverage by industry
+- Working Capital Ratio by industry
+
+## SQL Queries
+All SQL scripts are in the `/sql` folder:
+1. Schema creation
+2. Dimension tables
+3. Fact table
+4. Revenue by industry
+5. Revenue YoY trend
+6. Profit margin analysis
+7. Risk assessment (debt-equity, leverage)
+8. Working capital ratio
+
+## Contact
+- **Name:** Qandeel Fatima
+- **Email:** fqandeel886@gmail.com
+- **Location:** Gujranwala, Pakistan
